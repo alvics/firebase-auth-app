@@ -1,0 +1,76 @@
+<!-- MD-Bootstrap Form -->
+<!-- Login to firebase -->
+<!-- Login form -->
+<div class="container mt-5">
+  <h2 class="text-center">Login to firebase / with social account</h2>
+  <div class="card">
+    <form [formGroup]="loginForm">
+      <p class="h5 text-center mb-4">Login</p>
+      <div class="md-form">
+        <i class="fa fa-envelope prefix grey-text"></i>
+        <input type="text" formControlName="email" id="email" class="form-control" mdbInputDirective>
+        <label for="email">Your email</label>
+      </div>
+      <div class="md-form">
+        <i class="fa fa-lock prefix grey-text"></i>
+        <input type="password" formControlName="password" id="password" class="form-control" mdbInputDirective>
+        <label for="password">Your password</label>
+      </div>
+      <div class="text-center">
+        <input (click)="tryLogin(loginForm.value)" mdbBtn color="deep-orange" class="waves-light" value="Login" mdbWavesEffect>
+      </div>
+      <div class="socialBtns">
+        <button id="fbBtn" (click)="tryFacebookLogin()" style="background-color: #3B5998; margin-top: 20px" mat-button>
+          <i class="fa fa-facebook fa-2x"></i> Login with FaceBook</button>
+        <br>
+        <button (click)="tryGoogleLogin()" style="background-color:  #dd4b39;" mat-button><i class="fa fa-google fa-2x"></i>
+          Login with Google</button>
+        <br>
+        <button (click)="tryTwitterLogin()" style="background-color: #1DA1F2" mat-button><i class="fa fa-twitter fa-2x"></i>
+          Login with Twitter</button>
+        <br><br>No account? <a style="color:blue" routerLink="/register">Create an account</a>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- Login form -->
+
+
+<!-- Angular Material Form 
+<div class="example-container">
+  <h2>Firebase Login with Social Providers</h2>
+  <mat-card>
+    <form [formGroup]="loginForm">
+      <mat-form-field>
+        <input matInput placeholder="Email" type="text" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" required>
+      </mat-form-field>
+    </form>
+    <br>
+    <button id="logBtn" (click)="tryLogin()" mat-button style="background-color: gray;">Login</button>
+    <br>
+    <button id="fbBtn" (click)="tryFacebookLogin()" style="background-color: #3B5998; margin-top: 30px" mat-button>
+      Login with FaceBook</button>
+    <br>
+    <button (click)="tryGoogleLogin()" style="background-color:  #dd4b39;" mat-button>Login with Google</button>
+    <br>
+    <button id="twBtn" (click)="tryTwitterLogin()" style="background-color: #1DA1F2" mat-button>Login with Twitter</button>
+    <br><br> or <a style="margin-bottom: 25px; margin-top: 25px;" routerLink="/register">
+      Register</a>
+  </mat-card>
+
+  <mat-grid-list cols="3" rowHeight="1:1">
+    <mat-grid-tile>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet harum optio at unde quia? Ut nemo reprehenderit
+      eligendi temporibus blanditiis.</mat-grid-tile>
+    <mat-grid-tile>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut ea illum cum quibusdam perferendis dolorem
+      ipsam aperiam nam quae reprehenderit.</mat-grid-tile>
+    <mat-grid-tile>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione modi perspiciatis eum, ullam nihil laborum
+      minus neque praesentium deserunt animi.</mat-grid-tile>
+
+  </mat-grid-list>
+
+</div> -->

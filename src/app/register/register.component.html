@@ -1,0 +1,70 @@
+<!-- MD-Bootstrap Form -->
+<!--Register into Firebase  -->
+<!-- Sign form -->
+<div class="container mt-5">
+  <h2 class="text-center">Sign up with firebase</h2>
+  <div class="card">
+    <form [formGroup]="registerForm">
+      <p class="h5 text-center mb-4">Sign Up</p>
+      <div class="md-form">
+        <i class="fa fa-envelope prefix grey-text"></i>
+        <input type="text" formControlName="email" id="email" class="form-control" mdbInputDirective>
+        <label for="email">Your email</label>
+      </div>
+      <div class="md-form">
+        <i class="fa fa-lock prefix grey-text"></i>
+        <input type="password" formControlName="password" id="password" class="form-control" mdbInputDirective>
+        <label for="password">Your password</label>
+      </div>
+      <label class="error">{{errorMessage}}</label>
+      <label class="success">{{successMessage}}</label>
+      <div class="text-center">
+        <input (click)="tryRegister(registerForm.value)" mdbBtn color="deep-orange" class="waves-light" value="Sign up" mdbWavesEffect>
+      </div>
+      <div class="socialBtns">
+        <button id="fbBtn" (click)="tryFacebookLogin()" style="background-color: #3B5998; margin-top: 20px" mat-button>
+          <i class="fa fa-facebook fa-2x"></i> Sign up with FaceBook</button>
+        <br>
+        <button (click)="tryGoogleLogin()" style="background-color:  #dd4b39;" mat-button><i class="fa fa-google fa-2x"></i>
+          Sign up with Google</button>
+        <br>
+        <button (click)="tryTwitterLogin()" style="background-color: #1DA1F2" mat-button><i class="fa fa-twitter fa-2x"></i>
+          Sign up with Twitter</button>
+        <br><br> or already have an account
+        <a style="color:blue" routerLink="/login">Login</a>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- Sign up form -->
+
+<!-- Angular Material Form 
+<div class="example-container">
+  <h2>Firebase Register with Social Providers</h2>
+  <mat-card>
+
+    <mat-form-field [formGroup]="registerForm">
+      <input type="email" matInput placeholder="Email" [formControl]="email" formControlName="email" class="form-control" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field [formGroup]="registerForm">
+      <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" required>
+      <label class="error">{{errorMessage}}</label>
+      <label class="success">{{successMessage}}</label>
+    </mat-form-field>
+
+    <br>
+    <button id="regoBtn" mat-button type="submit" (click)="tryRegister(registerForm.value)" style="background-color: gray;">Register</button>
+    <br>
+    <button id="fbBtn" (click)="tryFacebookLogin()" style="background-color: #3B5998; margin-top: 20px" mat-button>
+      Register with FaceBook</button>
+    <br>
+    <button (click)="tryGoogleLogin()" style="background-color:  #dd4b39;" mat-button>Register with Google</button>
+    <br>
+    <button (click)="tryTwitterLogin()" style="background-color: #1DA1F2" mat-button>Register with Twitter</button>
+    <br><br> or already have an account
+    <a style="color:blue" routerLink="/login">Login</a>
+  </mat-card>
+
+</div> -->

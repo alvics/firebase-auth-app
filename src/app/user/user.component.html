@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Firebase Auth App</span>
+    <span class="example-spacer"></span>
+
+    <span style="font-size:12px; padding-right: 10px;"><a (click)="logout()">Logout </a></span>
+    <img style="height:40px;" mat-card-avatar [src]="user.image" class="example-header-image" />
+    <i [hidden]="user" class="material-icons">
+      account_circle
+    </i>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="card-body">
+  <h4>{{user.name}}</h4>
+  <p style="font-size:14px;" class="card-text">Welcome good to see you, Social Authentication using Firebase in an Angular
+    6 web app. </p>
+</div>
+<!-- 
+<div *ngIf='user.provider != "password"' class="card-body">
+  <mat-card-header>
+    <img mat-card-avatar [src]="user.image" class="example-header-image" />
+    <mat-card-title>{{user.name}}</mat-card-title>
+  </mat-card-header>
+  <p class="card-text">This is an example of Social Authentication using Firebase in an Angular 6 web app. </p>
+</div>
+<a type="submit" [formControl]="email" (click)="logout()">Logout</a>
+-->
