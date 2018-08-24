@@ -11,3 +11,35 @@ body {
 mat-grid-list {
   display: flex;
 }
+
+@media (max-width: 450px) {
+  .card {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .h5 {
+    margin-right: 120px;
+  }
+  .socialBtns {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #btn {
+    width: 50%;
+    margin-right: 129px;
+  }
+  #fbBtn {
+    width: 50%;
+    margin-right: 120px;
+  }
+  #ggBtn,
+  #twBtn {
+    width: 55%;
+    margin-right: 120px;
+  }
+}

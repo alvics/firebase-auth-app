@@ -1,27 +1,44 @@
-# FirebaseAuthApp
+# Firebase Authentication with Angular 6 App
+
+This project is an updated version from angular-templates, using the AngularFire2 libary and firebase. Angular 6 auth app with social authentication login.
+
+## PWA, Angular Material, MD-Bootstrap
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
 
-## Development server
+## Install repository
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm install` to load all the required dependencies
 
-## Code scaffolding
+## In your firebase console
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### add credentials
 
-## Build
+```
+ export const environment = {
+      production: false,
+      firebase: {
+   apiKey: "YOUR_CREDENTIALS_HERE",
+   authDomain: "YOUR_CREDENTIALS_HERE",
+   databaseURL: "YOUR_CREDENTIALS_HERE",
+   projectId: "YOUR_CREDENTIALS_HERE",
+   storageBucket: "YOUR_CREDENTIALS_HERE",
+   messagingSenderId: "YOUR_CREDENTIALS_HERE"
+ }
+};
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Enable email and social connects
 
-## Running unit tests
+![](src/assets/screenshots/firebase.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+configure App id and App secret with facebook and twitter.
 
-## Running end-to-end tests
+Now run `ng serve -o` to start your local server.
+![](src/assets/screenshots/login.png)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+![](src/assets/screenshots/signup.png)
 
-## Further help
+## When login avatar right of screen and welcome page
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+![](src/assets/screenshots/Ipad.png)
