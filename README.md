@@ -12,7 +12,7 @@ Run `npm install` to load all the required dependencies
 
 ## In your firebase console
 
-### add credentials
+### add your credentials
 
 ```
  export const environment = {
