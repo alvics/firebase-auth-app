@@ -1,6 +1,6 @@
 # Firebase Authentication with Angular 6 App
 
-This project is an updated version from angular-templates, using the AngularFire2 libary and firebase. Angular 6 auth app with social authentication login.
+Angular 6 auth app with social authentication login. This project is an updated version from angular-templates, using the AngularFire2 libary and firebase.
 
 ## PWA, Angular Material, MD-Bootstrap
 
