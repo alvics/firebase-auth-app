@@ -2,7 +2,7 @@
 
 Angular 6 auth app with social authentication login. This project is an updated version from angular-templates, using the AngularFire2 libary and firebase.
 
-## PWA, Angular Material, MD-Bootstrap
+## Raedy PWA, Angular Material, MD-Bootstrap
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
 
